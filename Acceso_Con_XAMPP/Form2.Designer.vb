@@ -27,13 +27,13 @@ Partial Class Form2
         TextBox1 = New TextBox()
         Label1 = New Label()
         Label2 = New Label()
-        PictureBox2 = New PictureBox()
-        PictureBox3 = New PictureBox()
-        PictureBox4 = New PictureBox()
         ComboBox1 = New ComboBox()
         Label3 = New Label()
         ComboBox2 = New ComboBox()
         Label4 = New Label()
+        PictureBox2 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox4 = New PictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -42,9 +42,11 @@ Partial Class Form2
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Location = New Point(429, 118)
+        PictureBox1.Image = My.Resources.Resources._242219230_146342881023360_1855980918170481644_n
+        PictureBox1.Location = New Point(300, 74)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(120, 106)
+        PictureBox1.Size = New Size(150, 135)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 4
         PictureBox1.TabStop = False
         ' 
@@ -82,34 +84,10 @@ Partial Class Form2
         Label2.TabIndex = 11
         Label2.Text = "Código único estudiantil"
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Location = New Point(429, 261)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(120, 106)
-        PictureBox2.TabIndex = 12
-        PictureBox2.TabStop = False
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Location = New Point(594, 261)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(120, 106)
-        PictureBox3.TabIndex = 13
-        PictureBox3.TabStop = False
-        ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Location = New Point(594, 118)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(120, 106)
-        PictureBox4.TabIndex = 14
-        PictureBox4.TabStop = False
-        ' 
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Partido1", "Partido2", "Partido3", "Partido4"})
+        ComboBox1.Items.AddRange(New Object() {"Fuerza Estudiantil", "Partido Escolar Amistoso", "Cosejo Escolar", "Partiod Escolar Liberal"})
         ComboBox1.Location = New Point(45, 181)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(151, 28)
@@ -142,19 +120,49 @@ Partial Class Form2
         Label4.TabIndex = 18
         Label4.Text = "No. de mesa"
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources._310932535_178967064687622_3799742947820029099_n
+        PictureBox2.Location = New Point(300, 231)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(150, 135)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 19
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = My.Resources.Resources.images
+        PictureBox3.Location = New Point(506, 231)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(150, 135)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 20
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = My.Resources.Resources._300032824_376649597972698_8590243310381902404_n
+        PictureBox4.Location = New Point(506, 74)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(150, 135)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 21
+        PictureBox4.TabStop = False
+        ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SpringGreen
         ClientSize = New Size(800, 450)
+        Controls.Add(PictureBox4)
+        Controls.Add(PictureBox3)
+        Controls.Add(PictureBox2)
         Controls.Add(Label4)
         Controls.Add(ComboBox2)
         Controls.Add(Label3)
         Controls.Add(ComboBox1)
-        Controls.Add(PictureBox4)
-        Controls.Add(PictureBox3)
-        Controls.Add(PictureBox2)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox1)
@@ -174,11 +182,11 @@ Partial Class Form2
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class
