@@ -93,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property ewa() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ewa", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property f83a29f67bf7ff81447364cc216bb9d4e0fe338e_s2_n2_y1_removebg_preview() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("f83a29f67bf7ff81447364cc216bb9d4e0fe338e_s2_n2_y1_removebg_preview", resourceCulture)

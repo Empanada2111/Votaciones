@@ -42,7 +42,7 @@ Partial Class Form2
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.Resources._242219230_146342881023360_1855980918170481644_n
+        PictureBox1.Image = My.Resources.Resources.ewa
         PictureBox1.Location = New Point(300, 74)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(150, 135)

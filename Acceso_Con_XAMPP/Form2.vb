@@ -10,4 +10,5 @@ Public Class Form2
         MessageBox.Show("Voto enviado correctamente")
         Me.Close()
     End Sub
+
 End Class
