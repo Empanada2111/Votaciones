@@ -1,7 +1,7 @@
 ﻿Public Class Form4
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
-            create("insert into alumnos(nombre, apellido, grado, clave, usuario,contraseña) values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "', '" & TextBox4.Text & "', '" & TextBox5.Text & "', '" & TextBox6.Text & "')")
+            create("insert into alumnos(nombre, apellido, grado, clave, usuario,mesa) values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "', '" & TextBox4.Text & "', '" & TextBox5.Text & "', '" & ComboBox2.Text & "')")
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -15,7 +15,7 @@
         ComboBox1.Text = ""
         TextBox4.Text = ""
         TextBox5.Text = ""
-        TextBox6.Text = ""
+        ComboBox2.Text = ""
 
     End Sub
 

@@ -34,9 +34,9 @@ Partial Class Form3
         Label4 = New Label()
         Label5 = New Label()
         Button1 = New Button()
-        TextBox6 = New TextBox()
         Label6 = New Label()
         ComboBox1 = New ComboBox()
+        ComboBox2 = New ComboBox()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -117,9 +117,9 @@ Partial Class Form3
         Label4.AutoSize = True
         Label4.Location = New Point(174, 226)
         Label4.Name = "Label4"
-        Label4.Size = New Size(45, 20)
+        Label4.Size = New Size(43, 20)
         Label4.TabIndex = 12
-        Label4.Text = "Clave"
+        Label4.Text = "clave"
         ' 
         ' Label5
         ' 
@@ -139,21 +139,14 @@ Partial Class Form3
         Button1.Text = "Back"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(247, 317)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(125, 27)
-        TextBox6.TabIndex = 15
-        ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.Location = New Point(152, 324)
         Label6.Name = "Label6"
-        Label6.Size = New Size(83, 20)
+        Label6.Size = New Size(44, 20)
         Label6.TabIndex = 16
-        Label6.Text = "Contraseña"
+        Label6.Text = "Mesa"
         ' 
         ' ComboBox1
         ' 
@@ -164,15 +157,24 @@ Partial Class Form3
         ComboBox1.Size = New Size(125, 28)
         ComboBox1.TabIndex = 17
         ' 
+        ' ComboBox2
+        ' 
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        ComboBox2.Location = New Point(248, 320)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(151, 28)
+        ComboBox2.TabIndex = 18
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Cyan
         ClientSize = New Size(800, 450)
+        Controls.Add(ComboBox2)
         Controls.Add(ComboBox1)
         Controls.Add(Label6)
-        Controls.Add(TextBox6)
         Controls.Add(Button1)
         Controls.Add(Label5)
         Controls.Add(Label4)
@@ -203,7 +205,7 @@ Partial Class Form3
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class

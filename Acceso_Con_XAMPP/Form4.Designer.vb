@@ -25,8 +25,6 @@ Partial Class Form4
         Button3 = New Button()
         Button2 = New Button()
         Button1 = New Button()
-        Label6 = New Label()
-        TextBox6 = New TextBox()
         Label5 = New Label()
         Label4 = New Label()
         TextBox5 = New TextBox()
@@ -37,6 +35,8 @@ Partial Class Form4
         TextBox2 = New TextBox()
         TextBox1 = New TextBox()
         ComboBox1 = New ComboBox()
+        ComboBox2 = New ComboBox()
+        Label6 = New Label()
         SuspendLayout()
         ' 
         ' Button3
@@ -65,22 +65,6 @@ Partial Class Form4
         Button1.TabIndex = 30
         Button1.Text = "Back"
         Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(155, 344)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(83, 20)
-        Label6.TabIndex = 42
-        Label6.Text = "Contraseña"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(250, 337)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(125, 27)
-        TextBox6.TabIndex = 41
         ' 
         ' Label5
         ' 
@@ -164,15 +148,33 @@ Partial Class Form4
         ComboBox1.Size = New Size(125, 28)
         ComboBox1.TabIndex = 43
         ' 
+        ' ComboBox2
+        ' 
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4"})
+        ComboBox2.Location = New Point(250, 338)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(151, 28)
+        ComboBox2.TabIndex = 45
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(154, 342)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(44, 20)
+        Label6.TabIndex = 44
+        Label6.Text = "Mesa"
+        ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Orange
         ClientSize = New Size(800, 450)
-        Controls.Add(ComboBox1)
+        Controls.Add(ComboBox2)
         Controls.Add(Label6)
-        Controls.Add(TextBox6)
+        Controls.Add(ComboBox1)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(TextBox5)
@@ -193,8 +195,6 @@ Partial Class Form4
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox5 As TextBox
@@ -205,4 +205,6 @@ Partial Class Form4
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label6 As Label
 End Class

@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Acceso_Con_XAMPP.Form1
+            Me.MainForm = Global.Acceso_Con_XAMPP.Form6
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
